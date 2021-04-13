@@ -1,4 +1,4 @@
-// This is a trial for tic tac toe in C++
+
 #include <iostream>
 #include <string>
 using namespace std;
