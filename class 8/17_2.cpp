@@ -10,7 +10,7 @@ int main(){
 	int* p1 = &int_value;
 
     //2.2
-    cout << "VALUE OF INTEGER: " << int_value << "	\t AND VALUE OF p1: " << p1 << "." << endl << endl;
+    cout << "value of int: " << int_value << "	\t value of p1: " << p1 << "." << endl << endl;
     
         cout << "----------------------------------------------------------------"                  << endl << endl;
 
