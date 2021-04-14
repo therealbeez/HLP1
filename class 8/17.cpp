@@ -6,19 +6,7 @@ int loop_int = 0;
 
 void print_10_array ( ostream& os, int* a ) {
 
-    //1.4
-    cout << "1.4" <<endl;
-    
-    for( loop_int = 0; loop_int < 10; loop_int++ ) {
-		cout << (loop_int + 1) << " \t value: " << a [ loop_int ]; 
-        cout << " \t address: " << &a [ loop_int ]                                                 << endl;
-
-        
-    }
-    cout << endl << "-----------------------------------------------------------------------------------" << endl << endl;
-
-}
-
+   
 
 void print_10_array_2 ( ostream& os, int* a ) {
 //1.5
@@ -32,6 +20,20 @@ void print_10_array_2 ( ostream& os, int* a ) {
     cout << endl << "-----------------------------------------------------------------------------------" << endl << endl;
 
 }
+	
+ //1.4
+    cout << "1.4" <<endl;
+    
+    for( loop_int = 0; loop_int < 10; loop_int++ ) {
+		cout << (loop_int + 1) << " \t value: " << a [ loop_int ]; 
+        cout << " \t address: " << &a [ loop_int ]                                                 << endl;
+
+        
+    }
+    cout << endl << "-----------------------------------------------------------------------------------" << endl << endl;
+
+}
+
 
 
 void print_11_array ( ostream& os, int* a, int n ) {
