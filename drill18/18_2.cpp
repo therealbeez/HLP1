@@ -2,11 +2,11 @@
 
 //factorial
 int factorial(int n){
-    int f = 1;
+    int fa = 1;
     for(int i = 1; i <=n; ++i) {
-            f *= i;
+            fa *= i;
         }
-    return f;
+    return fa;
 }
 
 
