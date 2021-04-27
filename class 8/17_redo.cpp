@@ -110,7 +110,9 @@ int main(){
     int arr_final[10];    
     p2 = arr_final;
 
-    for (int i=0; i<10; ++i) *(p2+i)=*(p1+i);
+    for (int i=0; i<10; ++i) {
+	p2[i] = p1[i];
+    }
 
     vector < int > vec_10 { 1, 2, 4, 8, 16, 32, 64, 128, 256, 512};
     vector<int>* p1_v = &vec_10;
