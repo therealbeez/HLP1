@@ -41,6 +41,7 @@ int main(){
         cout << "Do you want to play again(y/n): ";
         cin >> game.playAgain;
         clearSquares();
+        player = 1;
         
 
     } while ((game.playAgain) == "y");
