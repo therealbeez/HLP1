@@ -240,5 +240,5 @@ int checkwin(){
     }
     
 
-
+return 0;
 }
