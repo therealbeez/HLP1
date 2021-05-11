@@ -176,21 +176,21 @@ public:
     iterator erase(iterator p) {		// requires Element<T>() && Allocator<A>()
 	if (p==end()) return p;
 	for (auto pos = p+1; pos!=end(); ++pos)
-	    *(pos – 1) = *pos; 			// copy element “one position to the left”
-	alloc.destroy(&*(end() – 1)); 			// destroy surplus copy of last element
+	    *(pos - 1) = *pos; 			// copy element “one position to the left”
+	alloc.destroy(&*(end() - 1)); 			// destroy surplus copy of last element
 	--sz;
 	return p;
     }
 
     iterator insert(iterator p, const T& val) {
-	int index = p – begin();
+	int index = p - begin();
 	if (size()==capacity())
 	    reserve(size()==0?8:2*size()); 		// make sure we have space
 	alloc.construct(elem+sz,*back());
 	++sz;
 	iterator pp = begin()+index; 		// the place to put val
-	for (auto pos = end() – 1; pos!=pp; ––pos)
-	    *pos = *(pos – 1); 			// copy elements one position to the right
+	for (auto pos = end() - 1; pos!=pp; --pos)
+	    *pos = *(pos - 1); 			// copy elements one position to the right
 	*(begin()+index) = val; 			// “insert” val
 	return pp;
     }
