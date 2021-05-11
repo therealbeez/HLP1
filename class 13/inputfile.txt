@@ -1,0 +1,10 @@
+boy 1 4.5
+toy 2 5.4
+soy 6 9.6
+car 3 6.9
+bar 66 3.3
+pig 14 1.2
+dig 33 2.2
+fig 19 4.7
+rat 44 3.8
+mat 7 6.5
