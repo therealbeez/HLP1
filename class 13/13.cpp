@@ -126,10 +126,10 @@ int main(){
     printtype(list_item);
 
     list_item.sort(Cmp_by_value());
-    cout<<"By value:"<<endl;
+    cout<<"By descending value:"<<endl;
     printtype(list_item);
 
-    Item horse2 = {"shoe",99,12.34}; 
+    Item horse2 = {"horse shoe",99,12.34}; 
     Item canon2 = {"Canon S400", 9988,499.95};
     list_item.push_back(horse2);
     list_item.push_back(canon2);
